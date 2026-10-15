@@ -242,17 +242,41 @@
 // }
 // console.log(foo("jjj" , "Ponka"));
 // type Casting 
-function foo(a, b) {
-    if (typeof a == "string") {
-        console.log(a);
-        let n1 = Number(a);
-        console.log(n1);
-    }
-    if (typeof b == "number") {
-        console.log(b);
-        let str = String(b);
-        console.log(str);
+// function foo (a:string , b:number){
+//     if(typeof a == "string"){
+//         console.log(a);
+//         let n1 = Number(a)
+//         console.log(n1);
+//     }
+//     if(typeof b == "number"){
+//         console.log(b);
+//         let str = String(b)
+//         console.log(str);
+//     }
+// }
+// foo("45", 89)
+// function foo(a:string , b:number):void {
+//     if(typeof a == "string"){
+//     console.log(a);
+//         let n1 = Number(a);
+//         console.log(n1);
+//     }
+//     if(typeof b == "number"){
+//     console.log(b);
+//       let n2 =   String(b);
+//       console.log(n2);
+//     }
+// }
+// foo("22" , 12)
+// Revision 
+// class is like a blueprint that help to make us unique products , bottles or many more
+class User {
+    constructor(name, email, age) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
     }
 }
-foo("45", 89);
+let u1 = new User("Muhammad Hasnain", "codermhasnain@gmail.com", 17);
+console.log(u1);
 export {};
